@@ -5,6 +5,8 @@ import {
   View,
   ListView
 } from 'react-native';
+import ListDetail from './ListDetail'
+
 
 export default class ListViewDemo extends Component {
 
