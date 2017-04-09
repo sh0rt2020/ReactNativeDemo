@@ -6,7 +6,7 @@ import {
 } from 'react-native'
 
 
-export default class ListDetail extends Component {
+export default class RNDetail extends Component {
 	constructor(props) {
 		super(props);
 	}
