@@ -2,22 +2,44 @@ import React, {Component} from 'react'
 import {
 	Image,
 	Text,
-	View
+	View,
+	StyleSheet,
 } from 'react-native'
 
 
 export default class RNDetail extends Component {
 	constructor(props) {
 		super(props);
-		// {navigator} = this.props.navigator;
+		this.props = props;
+		this.state = {
+			theme: this.props.theme,
+			rowID: this.props.rowID,
+			rowData: this.props.rowData,
+			parentComponent: this.props.parentComponent,
+			title: 'RNDetailPage',
+		}
+	}
+
+	componentDidMount() {
+
+	}
+
+	componentWillUnmount() {
+
 	}
 
 	render() {
-		const {navigator} = this.props
+		let title = this.props.rowData;
 		return (
-			<View style = {{paddingTop: 64}}>
-				<Text style = {{height: 44}}>this is a detail page</Text>
-			</View>
+			<Text style = {styles.header}>
+				the detail page of {JSON.stringify(title)}
+				</Text>
 		);
 	}
 }
+
+var styles = StyleSheet.create({
+	header: {
+		paddingTop: 64,
+	},
+});
