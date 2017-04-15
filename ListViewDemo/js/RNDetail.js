@@ -12,10 +12,6 @@ export default class RNDetail extends Component {
 		super(props);
 		this.props = props;
 		this.state = {
-			theme: this.props.theme,
-			rowID: this.props.rowID,
-			rowData: this.props.rowData,
-			parentComponent: this.props.parentComponent,
 			title: 'RNDetailPage',
 		}
 	}
