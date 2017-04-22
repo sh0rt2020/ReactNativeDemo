@@ -1,5 +1,8 @@
+/*
+列表页
+*/
+'use strict';
 
-'use strict'
 import React, {Component} from 'React';
 import {
   Text,
@@ -8,8 +11,9 @@ import {
   ListView,
   StyleSheet,
 } from 'react-native';
-import RNDetail from './RNDetail'
-import RNTableViewCell from './cell/RNTableViewCell'
+import RNDetail from './RNDetail';
+import RNTableViewCell from './cell/RNTableViewCell';
+import RNItemModel from './model/RNItemModel';
 
 
 export default class RNTableView extends Component {

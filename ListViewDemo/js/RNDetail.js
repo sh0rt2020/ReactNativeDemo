@@ -17,7 +17,7 @@ export default class RNDetail extends Component {
 	}
 
 	componentDidMount() {
-
+		
 	}
 
 	componentWillUnmount() {

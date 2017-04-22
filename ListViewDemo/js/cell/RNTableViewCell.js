@@ -1,11 +1,16 @@
-import React, {Component} from 'react'
+/*
+cell
+*/
+'use strict';
+
+import React, {Component} from 'react';
 import {
 	Image,
 	Text,
 	View,
 	StyleSheet,
 	TouchableHighlight
-} from 'react-native'
+} from 'react-native';
 
 export default class RNTableViewCell extends Component {
 
@@ -26,6 +31,10 @@ export default class RNTableViewCell extends Component {
 				// highlightRow = {}
 			>
 				<View style = {styles.cellcontainer}>
+					<Image
+						style = {styles.image}
+						source = {this.}
+					/>
 					<Text style = {styles.title}>{item}</Text>
 				</View>
 			</TouchableHighlight>
