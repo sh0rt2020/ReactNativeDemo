@@ -11,4 +11,8 @@ export default class RNApiManager {
   constructor(props) {
     super(props);
   }
+
+  getApi() {
+
+  }
 }
