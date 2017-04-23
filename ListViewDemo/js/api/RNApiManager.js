@@ -1,7 +1,10 @@
 /*
-拼接api参数
+拼接api参数(包括数据加密、公共参数等)
 */
 'use strict';
+
+const API_SERVER = 'http://m.spider.com.cn';
+
 
 import {
   AsyncStorage,
@@ -12,7 +15,7 @@ export default class RNApiManager {
     super(props);
   }
 
-  getApi() {
-
+  getApi(param) {
+    return
   }
 }
